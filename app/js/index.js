@@ -1,3 +1,4 @@
+import 'babel-polyfill'
 class Test{
     constructor(){
         this.a = 'hello world!'

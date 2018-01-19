@@ -34,7 +34,7 @@ gulp.task('scripts',()=>{
         }))
     })
     //将编译好的文件写入下面的路径中
-    .pipe(gulp.dest('server/publick/js'))
+    .pipe(gulp.dest('server/public/js'))
     //重命令文件
     .pipe(rename({
         basename: 'cp',

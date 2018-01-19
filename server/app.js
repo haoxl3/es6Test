@@ -21,7 +21,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
-
+app.use(require('connect-livereload')());//热更新中间件，一定要放在上面那行的下面
 app.use('/', index);
 app.use('/users', users);
 

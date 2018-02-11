@@ -1,4 +1,6 @@
 import 'babel-polyfill'
+import Lottery from './lottery'
+// 项目入口
 class Test{
     constructor(){
         this.a = 'hello world!'

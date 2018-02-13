@@ -34,6 +34,7 @@
     "yargs": "^10.1.1"
   },
   "dependencies": {
-    "jquery": "^3.3.1"
+    "jquery": "^3.3.1",
+    "mockjs": "^1.0.1-beta3"
   }
 }

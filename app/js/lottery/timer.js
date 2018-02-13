@@ -3,7 +3,7 @@ class Timer{
         const now = new Date().getTime();
         const self = this;
         // 如果当前日期大于截止时间则直接返回
-        if(now - end){
+        if(now - end >0){
             handle.call(self);
         }else{
             // 计算剩余时间

@@ -13,7 +13,7 @@ class Calculate{
         //判断玩法是否支持，且属于法玩中的一种，玩法用R1~R8代表
         if(exist && play_name.at(0) === 'r'){
             //用类名直接点出来的为静态方法
-            count = Calculate.combine(arr, play_name.split('')[1]);
+            count = Calculate.combine(arr, play_name.split('')[1]).length;
         }
         return count;
     }
@@ -46,6 +46,7 @@ class Calculate{
                 }
             }
         })(arr, size, [])
+        return allResult
     }
     /**
      * 奖金范围预测
